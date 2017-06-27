@@ -1,0 +1,20 @@
+---
+name: "StackerPE"
+author: "BlockHorizons"
+version: 0.0.1
+api: [3.0.0-ALPHA5, 3.0.0-ALPHA6]
+main: BlockHorizons\StackerPE\Loader
+
+permissions:
+  stackerpe:
+    default: false
+    description: "Allows access to all StackerPE features."
+    children:
+      stackerpe.command:
+        default: op
+        children:
+          stackerpe.command.reload:
+            default: op
+          stackerpe.command.info:
+            default: op
+...
